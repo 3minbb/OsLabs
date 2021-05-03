@@ -19,7 +19,7 @@ pthread_t thread1, thread2;
 int res1 = pthread_create(&thread1, NULL, print_message_function1, NULL);
 int res2 = pthread_create(&thread2, NULL, print_message_function2, NULL);
 int iret1, iret2;
-pthread_join(thread1, (void**) &iret1);	//ожидание завершения потока thread1 со статусом iret1
-pthread_join(thread2, (void**) &iret2);	//ожидание завершения потока thread2 со статусом iret2
+pthread_join(thread1, (void**) &iret1);
+pthread_join(thread2, (void**) &iret2);
 return 0;
 }
