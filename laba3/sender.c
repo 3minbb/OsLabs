@@ -14,7 +14,7 @@ printf("error with shmid()\n");
 return -1;
 }
 int* mem = (int* )shmat(memId, 0, 0);
-if (NULL == mem)
+if (mem == NULL)
 {
 printf("error with shmat()\n");
 return -2;
