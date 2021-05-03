@@ -5,7 +5,7 @@
 #include "time.h"
 int main(void)
 {
-const size_t memSize = 80;
+const size_t memSize = 1024;
 int memId = shmget(IPC_PRIVATE, memSize, 0600 | IPC_CREAT | IPC_EXCL);
 printf("shmid = %i\n", memId);
 if (memId <= 0)
